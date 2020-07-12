@@ -46,7 +46,6 @@
 }
 
 .card-hover {
-    height: 290px;
     position: relative;
   }
 
@@ -55,7 +54,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 116%;
+    height: 100%;
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
   }
@@ -67,7 +66,7 @@
 
   .button {
     position: absolute;
-    left:63px;
+    left:22%;
     top: 125px;
     text-align: center;
     opacity: 0;
@@ -95,3 +94,6 @@
     color: #FAFAFF;
     height: 40%;
   }
+
+
+  

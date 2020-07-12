@@ -10,10 +10,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class HomeComponent implements OnInit {
 
   members: {content: string, url: string}[] = [
-    {content: 'To enable ‘Learning’ bring a visible & positive impact to individuals & organizations. To be the reliable ‘Solution Providers’', url: '../../assets/image/vission-misson.jpg'},
-    {content: 'Aspirants enrolled under this training would be able to understand and learn knowledge of various technology trends and processes as well as have updated knowledge about database management systems and IT initiatives. ', url: '../../assets/image/slide8.jpg'},
-    {content: 'Banaras Skill Development India Private Limited company, is present in EDUCATION & TRAINING – Vocational Training, Job-oriented courses, Skill Development Training', url: '../../assets/image/about.jpg'},
-    {content: 'On the back of its rich experience in IT Education & Training and association with leading companies and organizations, Banaras Skill has accumulated vast experience & expertise in this field.', url: '../../assets/image/consultancy.jpg'}
+    {content: 'To enable ‘Learning’ bring a visible & positive impact to individuals & organizations. To be the reliable ‘Solution Providers’', url: '../../assets/image/1.png'},
+    {content: 'Aspirants enrolled under this training would be able to understand and learn knowledge of various technology trends and processes as well as have updated knowledge about database management systems and IT initiatives. ', url: '../../assets/image/2.png'},
+    {content: 'Banaras Skill Development India Private Limited company, is present in EDUCATION & TRAINING – Vocational Training, Job-oriented courses, Skill Development Training', url: '../../assets/image/3.png'},
+    {content: 'On the back of its rich experience in IT Education & Training and association with leading companies and organizations, Banaras Skill has accumulated vast experience & expertise in this field.', url: '../../assets/image/4.png'}
   ];
 
   constructor(private router :Router) { }

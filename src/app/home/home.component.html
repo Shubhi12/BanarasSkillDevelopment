@@ -1,5 +1,5 @@
 <div style="padding: 0">   
-    <ngb-carousel>
+    <ngb-carousel [interval]="5000">
       <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
           <img class="img1" src="../../assets/image/slide1.jpg" alt="Random first slide">
@@ -69,9 +69,6 @@
         <div class="card-hover">
           <div class="overlay"></div>
             <img [src]="member.url" alt="Photo of {{member.title}}">
-            <div class="card-content">
-                {{member.content}}
-            </div>
             <div class="button" (click)="navigateTo(indexOfelement)"><a href="javascript:void(0)"> Know more </a>
             </div>
         </div>
