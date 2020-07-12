@@ -1,0 +1,10 @@
+<div id="container" padding-top-20 >
+    <div class="heading">
+        PHOTO GALLARY
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"  padding-top-20 *ngFor="let pic of Pictures">
+            <img [src]="pic.url" class="img-fluid img-thumbnail" alt="Cinque Terre" width="304" height="236">
+        </div>
+    </div>
+  </div>

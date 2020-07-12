@@ -1,0 +1,80 @@
+<div style="padding: 0">   
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide1.jpg" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide2.jpg" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide3.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide4.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide5.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide6.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="img1" src="../../assets/image/slide7.jpg" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>Third slide label</h3>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px" style="padding: 20px 15px 0 15px;" >
+    <div *ngFor="let member of members;let indexOfelement=index;" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)" class="card-style" >
+        <div class="card-hover">
+          <div class="overlay"></div>
+            <img [src]="member.url" alt="Photo of {{member.title}}">
+            <div class="card-content">
+                {{member.content}}
+            </div>
+            <div class="button" (click)="navigateTo(indexOfelement)"><a href="javascript:void(0)"> Know more </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

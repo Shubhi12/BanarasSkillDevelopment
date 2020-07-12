@@ -1,1 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/uikit/dist/css/uikit.css";
+@import "../node_modules/uikit/dist/css/uikit.min.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #E4D9FF;
+}
+
+.container{
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+
+  [padding-all-10]{
+    padding:10px ;
+}
+
+[padding-top-20]{
+    padding-top:20px;
+}
+
+[padding-left-20]{
+    padding-left:20px;
+}
+[padding-right-20]{
+    padding-right:20px;
+}
+[padding-bottom-20]{
+    padding-bottom:20px;
+}
+
+[padding-top-5]{
+    padding-top: 5px;
+}
+  
+#container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gunmetal{
+    background-color: #30343F;
+}
+
+.ghostWhite{
+    color: #FAFAFF;
+}
+
+.lavender-blue{
+    color: #E4D9FF;
+}
+
+.lavender-blue-back{
+    background-color: #E4D9FF;
+}
+
+.space-cadet{
+    color: #273469;
+}
+
+.space-cadet-back{
+    background-color: #273469;
+}
+.space-cadet-dark{
+    color: #1E2749;
+}
+.space-cadet-dark-back{
+    background-color: #1E2749;
+}
+
+.heading{
+    background: #1E2749;
+    padding: 5px;
+    color: #FAFAFF !important;
+    font-size: xx-large;
+    border-radius: 5px;
+}
+
+.img-padding
+{
+    padding: 5px;
+}
+
+.textWrap{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    color: rgb(0, 0, 0);
+}
+
+.footerText {
+    font-family: 'roboto_condensedregular';
+    text-decoration: none;
+}
+
+.img-align{
+    text-align: center;
+    /* top: 50%; */
+    margin-top: 5%;
+}
