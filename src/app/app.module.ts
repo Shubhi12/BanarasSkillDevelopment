@@ -61,6 +61,7 @@ import { SoftwareSolutionComponent } from './software-solution/software-solution
 import { ReactiveFormsModule } from '@angular/forms';
 import { PhotoGallaryComponent } from './photo-gallary/photo-gallary.component';
 import { AlliancesComponent } from './alliances/alliances.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { AlliancesComponent } from './alliances/alliances.component';
     FranchiseeBusinessComponent,
     SoftwareSolutionComponent,
     PhotoGallaryComponent,
-    AlliancesComponent
+    AlliancesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

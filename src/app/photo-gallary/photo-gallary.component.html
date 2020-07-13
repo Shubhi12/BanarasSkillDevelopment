@@ -3,8 +3,9 @@
         PHOTO GALLERY
     </div>
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"  padding-top-20 *ngFor="let pic of Pictures">
-            <img [src]="pic.url" class="img-fluid img-thumbnail" alt="Cinque Terre" width="304" height="236">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 thumb"  padding-top-20 *ngFor="let pic of Pictures">
+            <a href="javascript:void(0)" class="fancybox" rel="ligthbox">    
+            <img [src]="pic.url" class="zoom img-fluid " alt="Cinque Terre" width="304" height="236"></a>
         </div>
     </div>
   </div>

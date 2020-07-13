@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  toggle:boolean[];
   constructor() { }
 
   ngOnInit() {
+    this.toggle=[true, false, false, false, false, false, false, false];
+  }
+
+  addCss(flag)
+  {
+    this.toggle=[false, false, false, false, false, false, false, false];
+    this.toggle[flag]=true;
   }
 
 }
