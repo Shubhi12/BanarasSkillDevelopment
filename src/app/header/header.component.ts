@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.toggle=[true, false, false, false, false, false, false, false];
+    this.toggle=[false, false, false, false, false, false, false, true];
   }
 
   addCss(flag)

@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
   constructor(private router :Router) { }
 
   ngOnInit() {
-    console.log("slo");
   }
   navigateTo(route)
   {
@@ -30,9 +29,9 @@ export class HomeComponent implements OnInit {
             break;
     case 1 : this.router.navigate(['/skillandtrain'])
             break;
-    case 2 : this.router.navigate(['/about'])
+    case 2 : this.router.navigate(['/consultancy'])
             break;
-    case 3 : this.router.navigate(['/consultancy'])
+    case 3 : this.router.navigate(['/about'])
               break;
    } 
   }

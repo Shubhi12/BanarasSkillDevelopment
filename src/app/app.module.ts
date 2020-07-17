@@ -62,6 +62,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PhotoGallaryComponent } from './photo-gallary/photo-gallary.component';
 import { AlliancesComponent } from './alliances/alliances.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
+import { CenterGorakhpurComponent } from './center-gorakhpur/center-gorakhpur.component';
+import { CenterVaranasiComponent } from './center-varanasi/center-varanasi.component';
+import { CenterChandauliComponent } from './center-chandauli/center-chandauli.component';
+import { CareersComponent } from './careers/careers.component';
+import { NewsEventComponent } from './news-event/news-event.component';
+import { MediaComponent } from './media/media.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +86,14 @@ import { FooterComponent } from './footer/footer.component';
     SoftwareSolutionComponent,
     PhotoGallaryComponent,
     AlliancesComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent,
+    CenterGorakhpurComponent,
+    CenterVaranasiComponent,
+    CenterChandauliComponent,
+    CareersComponent,
+    NewsEventComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,

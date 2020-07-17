@@ -21,7 +21,7 @@
 }
 
 .img1 {
-  height: 400px !important; /*adjust for your project*/
+  height: auto !important; /*adjust for your project*/
   width: 100% !important;
 }
 

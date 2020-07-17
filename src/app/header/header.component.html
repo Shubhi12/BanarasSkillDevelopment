@@ -1,8 +1,10 @@
 <!--Main Navigation-->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar gunmetal">
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a style="margin-left: 6.5%;" routerLink="/home"><img width="120" height="80" src="../../assets/image/logo.png"><span class="text">Banaras skill Development</span></a></div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar space-cadet-dark-back" style="padding: 0;">
     <div class="container">
-         <a class="navbar-brand" href="#"><img src="../../assets/image/logo3.png" height="25" width="25"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -10,74 +12,62 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <div class="dropdown">
-                  <a class="nav-link" (click)="addCss(7)" [ngClass]="{'active' : (toggle[0] || toggle[7])}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLink="/home">HOME</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 7px;">
-                      <a class="dropdown-item" (click)="addCss(0)" routerLinkActive="active" routerLink="/about">About us</a>
-                      <a class="dropdown-item" (click)="addCss(0)" routerLink="/visionandmission">Vision and Mission</a>
-                      <a class="dropdown-item" (click)="addCss(0)" routerLink="/qualitypolicy">Quality Policy</a>
-                      <a class="dropdown-item" (click)="addCss(0)" routerLink="/team">Our Team</a>
-                      <a class="dropdown-item" (click)="addCss(0)" routerLink="/newupdates">News & Updates</a>
-                  </div>
-              </div>
+              <a class="nav-link" [ngClass]="{'active' : toggle[7]}" (click)="addCss(7)" href="javascript:void(0)" routerLink="/home">HOME</a>
             </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                  <a class="nav-link" [ngClass]="{'active' : toggle[1]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">SERVICES</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 7px;">
-                      <a class="dropdown-item" (click)="addCss(1)" routerLink="/skillandtrain">Skilling & Training</a>
-                      <a class="dropdown-item" (click)="addCss(1)" routerLink="/consultancy">Counsultancy Services</a>
-                      <a class="dropdown-item" (click)="addCss(1)" routerLink="/franchisee">Franchisee Buisness</a>
-                      <a class="dropdown-item" (click)="addCss(1)" routerLink="/softwaresolution">Software Solution</a>
+            <li class="dropdown nav-item">
+                  <a class="nav-link dropdown-toggle" (click)="addCss(7)" [ngClass]="{'active' : toggle[0]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WHO WE ARE</a>
+                  <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLinkActive="active" routerLink="/about">About us</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/visionandmission">Vision and Mission</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/qualitypolicy">Quality Policy</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/team">Our Team</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/newupdates">News & Updates</a>
                   </div>
-              </div>
             </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                  <a class="nav-link" [ngClass]="{'active' : toggle[2]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">GALLERY</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 7px;">
-                      <a class="dropdown-item" (click)="addCss(2)" routerLink="/skillandtrain">News and Events</a>
-                      <a class="dropdown-item" (click)="addCss(2)" routerLink="/photogallary">Photo Gallery</a>
-                      <a class="dropdown-item" (click)="addCss(2)" routerLink="/franchisee">Media</a>
-                      <a class="dropdown-item" (click)="addCss(2)" routerLink="/softwaresolution">Coming Soon</a>
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[1]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">SERVICES</a>
+                  <div class="dropdown-menu" style="padding: 0; top: 82%;" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/skillandtrain">Skilling & Training</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/consultancy">Counsultancy Services</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/franchisee">Franchisee Buisness</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/softwaresolution">Software Solution</a>
                   </div>
+            </li>
+            <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[2]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">GALLERY</a>
+                  <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/newsEvents">News and Events</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/photogallary">Photo Gallery</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/media">Media</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" [ngClass]="{'active' : toggle[3]}" (click)="addCss(3)" href="javascript:void(0)" routerLink="/alliances">ALLIANCES</a>
             </li>
-            <li class="nav-item">
-              <div class="dropdown">
-                <a class="nav-link" [ngClass]="{'active' : toggle[4]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">CENTERS</a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: 7px;">
-                <a class="dropdown-item" click="addCss(4)" routerLink="/skillandtrain">BANARAS SKILL DEVELOPMENT-GORAKHPUR</a>
-                <a class="dropdown-item" click="addCss(4)" routerLink="/consultancy">BANARAS SKILL DEVELOPMENT-VARANASI</a>
-                <a class="dropdown-item" click="addCss(4)" routerLink="/franchisee">BANARAS SKILL DEVELOPMENT-CHANDAULI</a>
-            </div>
-              </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[4]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">CENTERS</a>
+                <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton" >
+                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerGorakhpur">BANARAS SKILL DEVELOPMENT-GORAKHPUR</a>
+                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerVaranasi">BANARAS SKILL DEVELOPMENT-VARANASI</a>
+                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerChandauli">BANARAS SKILL DEVELOPMENT-CHANDAULI</a>
+                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link"[ngClass]="{'active' : toggle[5]}" (click)="addCss(5)" href="#">CAREERS</a>
+              <a class="nav-link"[ngClass]="{'active' : toggle[5]}" routerLink="/careers"(click)="addCss(5)" href="#">CAREERS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active' : toggle[6]}" (click)="addCss(6)" href="#">CONTACT US</a>
+              <a class="nav-link" [ngClass]="{'active' : toggle[6]}" (click)="addCss(6)"  href="javascript:void(0)" routerLink="/contact" href="#">CONTACT US</a>
             </li>
           </ul>
-        <ul class="navbar-nav nav-flex-icons" style="flex-direction: row;">
+          <ul class="navbar-nav nav-flex-icons" style="flex-direction: row;">
             <li class="nav-item" style="padding-left:5px" >
-              <a class="nav-link"><i class="fa fa-facebook-f"></i></a>
+              <a class="nav-link" href="https://twitter.com/banaras_skill/status/1283821778033205248?s=20" target="blank"><i class="fa fa-twitter"></i></a>
             </li>
             <li class="nav-item" style="padding-left:5px">
-              <a class="nav-link"><i class="fa fa-twitter"></i></a>
+              <a class="nav-link" href="https://www.facebook.com/Banaras-Skill-Development-India-Pvt-Ltd-115789946876295/?modal=admin_todo_tour" target="blank"><i class="fa fa-facebook"></i></a>
             </li>
             <li class="nav-item" style="padding-left:5px">
-              <a class="nav-link"><i class="fa fa-instagram"></i></a>
-            </li>
-            <li class="nav-item" style="padding-left:5px">
-              <a class="nav-link"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item" style="padding-left:5px">
-              <a class="nav-link"><i class="fa fa-youtube"></i></a>
+              <a class="nav-link"  href="https://wa.me/919044527784" target="blank"><i class="fa fa-whatsapp"></i></a>
             </li>
           </ul>
         </div>

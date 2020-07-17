@@ -12,6 +12,13 @@ import { FranchiseeBusinessComponent } from './franchisee-business/franchisee-bu
 import { SoftwareSolutionComponent } from './software-solution/software-solution.component';
 import { PhotoGallaryComponent } from './photo-gallary/photo-gallary.component';
 import { AlliancesComponent } from './alliances/alliances.component';
+import { ContactComponent } from './contact/contact.component';
+import { CareersComponent } from './careers/careers.component';
+import { CenterGorakhpurComponent } from './center-gorakhpur/center-gorakhpur.component';
+import { CenterVaranasiComponent } from './center-varanasi/center-varanasi.component';
+import { CenterChandauliComponent } from './center-chandauli/center-chandauli.component';
+import { NewsEventComponent } from './news-event/news-event.component';
+import { MediaComponent } from './media/media.component';
 
 
 const routes: Routes = [
@@ -27,7 +34,17 @@ const routes: Routes = [
   {path: 'franchisee', component: FranchiseeBusinessComponent},
   {path: 'softwaresolution', component: SoftwareSolutionComponent},
   {path: 'photogallary', component: PhotoGallaryComponent},
-  {path: 'alliances', component: AlliancesComponent}
+  {path: 'alliances', component: AlliancesComponent},
+  {path: 'careers', component: CareersComponent},
+  {path: 'centerGorakhpur', component: CenterGorakhpurComponent},
+  {path: 'centerVaranasi', component: CenterVaranasiComponent},
+  {path: 'centerChandauli', component: CenterChandauliComponent},
+  {path: 'newsEvents', component: NewsEventComponent},
+  {path: 'media', component: MediaComponent},
+  {path: 'contact', component: ContactComponent}
+
+
+
 ];
 
 @NgModule({

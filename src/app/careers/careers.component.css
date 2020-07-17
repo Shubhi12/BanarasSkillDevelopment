@@ -1,6 +1,10 @@
 body {
     background-color: #c4c4c4;
-  
+}
+
+.background{
+    background-image: url('../../assets/image/comingsoon.jpg');
+    height: 100%;
 }
 
 .text {

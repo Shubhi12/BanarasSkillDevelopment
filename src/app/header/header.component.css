@@ -1,0 +1,13 @@
+.dropdown-item:hover{
+    background-color:#E4D9FF;
+}
+
+.text {
+    position: relative;
+    top: 14px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: #1E2749;
+
+}
