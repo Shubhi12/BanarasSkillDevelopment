@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -6,17 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  toggle:boolean[];
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
-    this.toggle=[false, false, false, false, false, false, false, true];
-  }
-
-  addCss(flag)
-  {
-    this.toggle=[false, false, false, false, false, false, false, false];
-    this.toggle[flag]=true;
   }
 
 }

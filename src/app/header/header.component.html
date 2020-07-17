@@ -1,9 +1,7 @@
 <!--Main Navigation-->
 <header>
-  <div class="row">
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12"> <a style="margin-left: 6.5%;" routerLink="/home"><img width="120" height="80" src="../../assets/image/logo.png"><span class="text">Banaras skill Development</span></a></div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar space-cadet-dark-back" style="padding: 0;">
+     <a style="margin-left: 2%;" routerLinkActive="active" routerLink="/home"><img width="120" height="80" src="../../assets/image/logo.png"></a><span class="text">Banaras Skill Development</span>
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar space-cadet-dark-back">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,51 +10,51 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active' : toggle[7]}" (click)="addCss(7)" href="javascript:void(0)" routerLink="/home">HOME</a>
+              <a class="nav-link" routerLinkActive="active" href="javascript:void(0)" routerLink="/home">HOME</a>
             </li>
             <li class="dropdown nav-item">
-                  <a class="nav-link dropdown-toggle" (click)="addCss(7)" [ngClass]="{'active' : toggle[0]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WHO WE ARE</a>
+                  <a class="nav-link dropdown-toggle" [class.active]="router.isActive('/about', true) || router.isActive('/visionandmission', true) || router.isActive('/qualitypolicy', true) || router.isActive('/team', true) || router.isActive('/newupdates', true)"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WHO WE ARE</a>
                   <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLinkActive="active" routerLink="/about">About us</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/visionandmission">Vision and Mission</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/qualitypolicy">Quality Policy</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/team">Our Team</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(0)" routerLink="/newupdates">News & Updates</a>
+                      <a class="dropdown-item" style="padding-left: 6px;" routerLinkActive="active1" routerLink="/about">About us</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/visionandmission">Vision and Mission</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/qualitypolicy">Quality Policy</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/team">Our Team</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/newupdates">News & Updates</a>
                   </div>
             </li>
             <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[1]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">SERVICES</a>
+                  <a class="nav-link dropdown-toggle" [class.active]="router.isActive('/skillandtrain', true) || router.isActive('/consultancy', true) || router.isActive('/franchisee', true) || router.isActive('/softwaresolution', true)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">SERVICES</a>
                   <div class="dropdown-menu" style="padding: 0; top: 82%;" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/skillandtrain">Skilling & Training</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/consultancy">Counsultancy Services</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/franchisee">Franchisee Buisness</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" style="padding-left: 6px;" (click)="addCss(1)" routerLink="/softwaresolution">Software Solution</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" style="padding-left: 6px;" routerLink="/skillandtrain">Skilling & Training</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" style="padding-left: 6px;" routerLink="/consultancy">Counsultancy Services</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" style="padding-left: 6px;" routerLink="/franchisee">Franchisee Buisness</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" style="padding-left: 6px;" routerLink="/softwaresolution">Software Solution</a>
                   </div>
             </li>
             <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[2]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">GALLERY</a>
+                  <a class="nav-link dropdown-toggle" [class.active]="router.isActive('/newsEvents', true) || router.isActive('/photogallary', true) || router.isActive('/media', true)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">GALLERY</a>
                   <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/newsEvents">News and Events</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/photogallary">Photo Gallery</a>
-                      <a class="dropdown-item" style="padding-left: 6px;" (click)="addCss(2)" routerLink="/media">Media</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;"  routerLink="/newsEvents">News and Events</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;"  routerLink="/photogallary">Photo Gallery</a>
+                      <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;"  routerLink="/media">Media</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active' : toggle[3]}" (click)="addCss(3)" href="javascript:void(0)" routerLink="/alliances">ALLIANCES</a>
+              <a class="nav-link" routerLinkActive="active" href="javascript:void(0)" routerLink="/alliances">ALLIANCES</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" [ngClass]="{'active' : toggle[4]}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">CENTERS</a>
+                <a class="nav-link dropdown-toggle" [class.active]="router.isActive('/centerGorakhpur', true) || router.isActive('/centerVaranasi', true) || router.isActive('/centerChandauli', true)" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="javascript:void(0)">CENTERS</a>
                 <div class="dropdown-menu" style="padding: 0; top: 82%;"aria-labelledby="dropdownMenuButton" >
-                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerGorakhpur">BANARAS SKILL DEVELOPMENT-GORAKHPUR</a>
-                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerVaranasi">BANARAS SKILL DEVELOPMENT-VARANASI</a>
-                  <a class="dropdown-item" style="padding-left: 6px;" click="addCss(4)" routerLink="/centerChandauli">BANARAS SKILL DEVELOPMENT-CHANDAULI</a>
+                  <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/centerGorakhpur">BANARAS SKILL DEVELOPMENT-GORAKHPUR</a>
+                  <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/centerVaranasi">BANARAS SKILL DEVELOPMENT-VARANASI</a>
+                  <a class="dropdown-item" routerLinkActive="active1" style="padding-left: 6px;" routerLink="/centerChandauli">BANARAS SKILL DEVELOPMENT-CHANDAULI</a>
                 </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link"[ngClass]="{'active' : toggle[5]}" routerLink="/careers"(click)="addCss(5)" href="#">CAREERS</a>
+              <a class="nav-link" routerLink="/careers" routerLinkActive="active" href="#">CAREERS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active' : toggle[6]}" (click)="addCss(6)"  href="javascript:void(0)" routerLink="/contact" href="#">CONTACT US</a>
+              <a class="nav-link" routerLinkActive="active"  href="javascript:void(0)" routerLink="/contact" href="#">CONTACT US</a>
             </li>
           </ul>
           <ul class="navbar-nav nav-flex-icons" style="flex-direction: row;">
@@ -67,7 +65,7 @@
               <a class="nav-link" href="https://www.facebook.com/Banaras-Skill-Development-India-Pvt-Ltd-115789946876295/?modal=admin_todo_tour" target="blank"><i class="fa fa-facebook"></i></a>
             </li>
             <li class="nav-item" style="padding-left:5px">
-              <a class="nav-link"  href="https://wa.me/919044527784" target="blank"><i class="fa fa-whatsapp"></i></a>
+              <a class="nav-link"  href="https://wa.me/917054663366" target="blank"><i class="fa fa-whatsapp"></i></a>
             </li>
           </ul>
         </div>
