@@ -22,7 +22,6 @@ export class HomeComponent implements OnInit {
   }
   navigateTo(route)
   {
-    console.log(route);
    switch(route)
    {
     case 0: this.router.navigate(['/visionandmission']);

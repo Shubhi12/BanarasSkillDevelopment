@@ -24,6 +24,7 @@ import { MediaComponent } from './media/media.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: '/home', pathMatch:'full'},
+  {path: '**', redirectTo: '/home', pathMatch:'full'},
   {path: 'newupdates', component:NewsUpdatesComponent},
   {path: 'about', component: AboutComponent},
   {path: 'visionandmission', component: VisionAndMissionComponent},
@@ -42,8 +43,6 @@ const routes: Routes = [
   {path: 'newsEvents', component: NewsEventComponent},
   {path: 'media', component: MediaComponent},
   {path: 'contact', component: ContactComponent}
-
-
 
 ];
 
