@@ -8,7 +8,7 @@ import { from } from 'rxjs';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  constructor(private router:Router) { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
   }
