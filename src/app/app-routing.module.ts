@@ -20,6 +20,7 @@ import { CenterChandauliComponent } from './center-chandauli/center-chandauli.co
 import { NewsEventComponent } from './news-event/news-event.component';
 import { MediaComponent } from './media/media.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlacementComponent } from './placement/placement.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,7 @@ const routes: Routes = [
   {path: 'newsEvents', component: NewsEventComponent},
   {path: 'media', component: MediaComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'placement', component: PlacementComponent},
   {path: '404', component: PageNotFoundComponent},
   {path: '**', redirectTo: '/404'}
 

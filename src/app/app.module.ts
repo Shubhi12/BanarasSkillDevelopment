@@ -70,6 +70,7 @@ import { CareersComponent } from './careers/careers.component';
 import { NewsEventComponent } from './news-event/news-event.component';
 import { MediaComponent } from './media/media.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlacementComponent } from './placement/placement.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +96,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CareersComponent,
     NewsEventComponent,
     MediaComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PlacementComponent
   ],
   imports: [
     BrowserModule,
