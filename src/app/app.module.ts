@@ -69,6 +69,7 @@ import { CenterChandauliComponent } from './center-chandauli/center-chandauli.co
 import { CareersComponent } from './careers/careers.component';
 import { NewsEventComponent } from './news-event/news-event.component';
 import { MediaComponent } from './media/media.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +94,8 @@ import { MediaComponent } from './media/media.component';
     CenterChandauliComponent,
     CareersComponent,
     NewsEventComponent,
-    MediaComponent
+    MediaComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

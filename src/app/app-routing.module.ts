@@ -19,12 +19,12 @@ import { CenterVaranasiComponent } from './center-varanasi/center-varanasi.compo
 import { CenterChandauliComponent } from './center-chandauli/center-chandauli.component';
 import { NewsEventComponent } from './news-event/news-event.component';
 import { MediaComponent } from './media/media.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo: '/home', pathMatch:'full'},
-  {path: '**', redirectTo: '/home', pathMatch:'full'},
   {path: 'newupdates', component:NewsUpdatesComponent},
   {path: 'about', component: AboutComponent},
   {path: 'visionandmission', component: VisionAndMissionComponent},
@@ -42,7 +42,9 @@ const routes: Routes = [
   {path: 'centerChandauli', component: CenterChandauliComponent},
   {path: 'newsEvents', component: NewsEventComponent},
   {path: 'media', component: MediaComponent},
-  {path: 'contact', component: ContactComponent}
+  {path: 'contact', component: ContactComponent},
+  {path: '404', component: PageNotFoundComponent},
+  {path: '**', redirectTo: '/404'}
 
 ];
 
